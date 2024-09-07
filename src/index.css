@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    color: #000000;
+
+}
+
+body {
+    background-image: url('/public/8c98994518b575bfd8c949e91d20548b.jpg');
+    background-size: contain;
+    background-position: center;
+    
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+}
+
+section {
+    margin-top: 3.5rem;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0.1, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+   
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+a, a:visited {
+    color: #fff;
+}
+
+input[type="text"],input[type="number"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #68c632;
+  background-color: white;
+  color: #000;
+  margin: 0 auto;
+  width: 60%;
+}
+/* For smaller screens (mobile), increase the width */
+@media screen and (max-width: 640px) {
+    input[type="text"],
+    input[type="number"],
+    input[type="password"]
+     {
+      width: 80%;
+    }
+  }
+
+label,
+button {
+  margin-top: 1rem;
+  
+    background-color: transparent;
+    color: #000000;
+}
+
+button {
+  padding: 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+
+.flexGrow {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
+.persistCheck {
+    font-size: 0.75rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.persistCheck label {
+    margin: 0 ;
+}
+
+[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin: 0 auto
+}
+.newbtn{
+    fontFamily: Nunito, sans-serif;
+          fontSize: 22px;
+          fontWeight: bold;
+          padding: 0.5rem;
+          borderRadius: 0.5rem;
+        
+          color: #fff;
+          width: 60%;
+          margin: 0 auto;
+          background: linear-gradient(to right, rgb(36, 243, 91), rgb(21, 138, 70));
+          marginTop: 2rem;
+}
+.newbtn1{
+    fontFamily: Nunito, sans-serif;
+          fontSize: 22px;
+          fontWeight: bold;
+          padding: 0.5rem;
+          borderRadius: 0.5rem;
+        
+          color: #fff;
+          width: 60%;
+          margin: 0 auto;
+          background: linear-gradient(to right, rgb(229, 108, 33), rgb(129, 2, 2));
+          marginTop: 2rem;
+}
+.newbtn1:hover{
+    fontFamily: Nunito, sans-serif;
+          fontSize: 22px;
+          fontWeight: bold;
+          padding: 0.5rem;
+          borderRadius: 0.5rem;
+        
+          color: #fff;
+          width: 60%;
+          margin: 0 auto;
+          background: linear-gradient(to left, rgb(229, 108, 33), rgb(129, 2, 2));
+          marginTop: 2rem;
+}
+.newbtn:hover{
+    fontFamily: Nunito, sans-serif;
+          fontSize: 22px;
+          fontWeight: bold;
+          padding: 0.5rem;
+          borderRadius: 0.5rem;
+        
+          color: #fff;
+          width: 60%;
+          margin: 0 auto;
+          background: linear-gradient(to left, rgb(36, 243, 91), rgb(21, 138, 70));
+          marginTop: 2rem;
+}
+th, td {
+    border: 0.5px solid #8b8b8b; /* Adjust thickness and color as needed */
+    padding: 2px;
+    
+  }
+  .with-icon {
+   padding-top: 0.8rem;
+    
+  }
+  
